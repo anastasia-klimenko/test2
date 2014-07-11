@@ -1,0 +1,24 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ <xs:jsDeploy>
+  <xs:Product name="PowerSearch">
+   <xs:Platform name="Heroku">
+    <xs:App name="html5search-jobscience">
+     <xs:db>
+      <xs:type>HerokuPostgres</xs:type>
+      <xs:product>standardTengu</xs:product>
+      <xs:host>ec2-54-225-189-252.compute-1.amazonaws.com</xs:host>
+      <xs:database>jobscience</xs:database>
+      <xs:user>jobscience</xs:user>
+      <xs:port>5582</xs:port>
+      <xs:password>password</xs:password>
+     </xs:db>
+     <xs:version>TAG_DROP_035</xs:version>
+     <xs:salesforce>
+      <xs:env>production</xs:env>
+      <xs:user>user@jobscience.com</xs:user>
+     </xs:salesforce>
+    </xs:App>
+   </xs:Platform>
+  </xs:Product>
+ </xs:jsDeploy>
+</xs:schema>
